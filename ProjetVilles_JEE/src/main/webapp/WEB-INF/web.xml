@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<servlet>
+		<servlet-name>Accueil</servlet-name>
+		<servlet-class>com.octest.servlets.Accueil</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Accueil</servlet-name>
+		<url-pattern>/accueil</url-pattern>
+	</servlet-mapping>
+	<servlet>
+
+		<servlet-name>DistanceVilles</servlet-name>
+		<servlet-class>com.octest.servlets.DistanceVilles</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DistanceVilles</servlet-name>
+		<url-pattern>/calculDistance</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AjoutVille</servlet-name>
+		<servlet-class>com.octest.servlets.AjoutVille</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AjoutVille</servlet-name>
+		<url-pattern>/ajoutVille</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EnsembleVilles</servlet-name>
+		<servlet-class>com.octest.servlets.EnsembleVilles</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EnsembleVilles</servlet-name>
+		<url-pattern>/ensembleVilles</url-pattern>
+	</servlet-mapping>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+</web-app>
